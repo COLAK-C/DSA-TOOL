@@ -1,0 +1,479 @@
+#!/bin/bash
+BLACK='\e[0;30m'
+BLUE='\e[0;34m'
+GREEN='\e[0;32m'
+CYAN='\e[0;36m'
+RED='\e[0;31m'
+PURPLE='\e[0;35m'
+BROWN='\e[0;33m'
+LIGHTGRAY='\e[0;37m'
+DARKGRAY='\e[1;30m'
+LIGHTBLUE='\e[1;34m'
+LIGHTGREEN='\e[1;32m'
+LIGHTCYAN='\e[1;36m'
+LIGHTRED='\e[1;31m'
+LIGHTPURPLE='\e[1;35m'
+YELLOW='\e[1;33m'
+WHITE='\e[1;37m'
+NC='\e[0m'              
+
+exit_script()
+{
+cd /root/Desktop/DSA-TOOL
+  ./DSA-TOOL
+}
+
+gitKurulum()
+{
+    clear
+echo -e " ${WHITE}EMINMISINIZ . . .   "
+read enter
+cd /root/Desktop/DSA-TOOL/Toollar
+git clone https://github.com/1N3/Sn1per.git
+echo " INDIRME ISLEMI BITMISTIR ENTER'A BASARAK DEVAM EDINIZ . . .  "
+read enter
+}
+
+Kurulum()
+{
+    clear
+cd /root/Desktop/DSA-TOOL/Toollar/Sn1per
+./install.sh
+echo " "
+echo " Enter'a Basarak Devam Edebilirsiniz . . .  "
+read enter
+}
+
+normalTARAMA()
+{
+    clear
+cd /root/Desktop/DSA-TOOL/Toollar/Sn1per
+    echo " "
+    echo -e "${BLUE}██████╗ ██╗██╗      ██████╗ ██╗                              "
+    echo -e "${BLUE}██╔══██╗██║██║     ██╔════╝ ██║                              "
+    echo -e "${BLUE}██████╔╝██║██║     ██║  ███╗██║                              "
+    echo -e "${BLUE}██╔══██╗██║██║     ██║   ██║██║                              "
+    echo -e "${BLUE}██████╔╝██║███████╗╚██████╔╝██║                              "
+    echo -e "${BLUE}╚═════╝ ╚═╝╚══════╝ ╚═════╝ ╚═╝                              "
+    echo -e "${WHITE}                                                             "
+    echo -e "${WHITE}████████╗ ██████╗ ██████╗ ██╗      █████╗ ███╗   ███╗ █████╗ "
+    echo -e "${WHITE}╚══██╔══╝██╔═══██╗██╔══██╗██║     ██╔══██╗████╗ ████║██╔══██╗"
+    echo -e "${WHITE}   ██║   ██║   ██║██████╔╝██║     ███████║██╔████╔██║███████║"
+    echo -e "${WHITE}   ██║   ██║   ██║██╔═══╝ ██║     ██╔══██║██║╚██╔╝██║██╔══██║"
+    echo -e "${WHITE}   ██║   ╚██████╔╝██║     ███████╗██║  ██║██║ ╚═╝ ██║██║  ██║"
+    echo -e "${WHITE}   ╚═╝    ╚═════╝ ╚═╝     ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝"
+                                                             
+    echo -e "${WHITE}CODED BY YANLIZ KURT ${GREEN}DarkSecArmy.COM | PcDunyasi.TV${RED}  [NO EDIT] "
+    echo -e "${GREEN}HEDEF BELIRTINIZ ORNEK : trump.org  ${YELLOW}" 
+    echo " " 
+echo "HEDEF : "
+read host
+./sniper -t $host
+echo " "
+echo " Enter'a Basarak Devam Edebilirsiniz . . .  "
+read enter
+}
+
+normalOSINTRECON()
+{
+    clear
+cd /root/Desktop/DSA-TOOL/Toollar/Sn1per
+    echo " "
+    echo -e "${BLUE}╔╗╔╔═╗╦═╗╔╦╗╔═╗╦    ╔╦╗╔═╗╔╦╗  "
+    echo -e "${BLUE}║║║║ ║╠╦╝║║║╠═╣║    ║║║║ ║ ║║  "
+    echo -e "${BLUE}╝╚╝╚═╝╩╚═╩ ╩╩ ╩╩═╝  ╩ ╩╚═╝═╩╝  "
+    echo -e "${WHITE}╔═╗╔═╗╦╔╗╔╔╦╗  ╦═╗╔═╗╔═╗╔═╗╔╗╔ "
+    echo -e "${WHITE}║ ║╚═╗║║║║ ║   ╠╦╝║╣ ║  ║ ║║║║ "
+    echo -e "${WHITE}╚═╝╚═╝╩╝╚╝ ╩   ╩╚═╚═╝╚═╝╚═╝╝╚╝ "
+    echo -e "${BLUE} "                                                             
+    echo -e "${WHITE}CODED BY YANLIZ KURT ${GREEN}DarkSecArmy.COM | PcDunyasi.TV${RED}  [NO EDIT] "
+    echo -e "${GREEN}NORMAL MOD + OSINT + RECON  ${YELLOW}" 
+    echo " " 
+echo "HEDEF : "
+read host
+./sniper -t $host -o -re
+
+echo " "
+echo " Enter'a Basarak Devam Edebilirsiniz . . .  "
+read enter
+}
+
+stealthMODOSINTRECON()
+{
+    clear
+cd /root/Desktop/DSA-TOOL/Toollar/Sn1per
+    echo " "
+    echo -e "${BLUE}╔═╗╔╦╗╔═╗╔═╗╦ ╔╦╗╦ ╦  ╔╦╗╔═╗╔╦╗  "
+    echo -e "${BLUE}╚═╗ ║ ║╣ ╠═╣║  ║ ╠═╣  ║║║║ ║ ║║  "
+    echo -e "${BLUE}╚═╝ ╩ ╚═╝╩ ╩╩═╝╩ ╩ ╩  ╩ ╩╚═╝═╩╝  "
+    echo -e "${BLUE}╔═╗╔═╗╦╔╗╔╔╦╗  ╦═╗╔═╗╔═╗╔═╗╔╗╔   "
+    echo -e "${BLUE}║ ║╚═╗║║║║ ║   ╠╦╝║╣ ║  ║ ║║║║   " 
+    echo -e "${BLUE}╚═╝╚═╝╩╝╚╝ ╩   ╩╚═╚═╝╚═╝╚═╝╝╚╝   "  
+    echo -e "${BLUE} "                                                             
+    echo -e "${WHITE}CODED BY YANLIZ KURT ${GREEN}DarkSecArmy.COM | PcDunyasi.TV${RED}  [NO EDIT] "
+    echo -e "${GREEN}STEALTH MOD OSINT + RECON  ${YELLOW}" 
+    echo " " 
+echo "HEDEF : "
+read host
+./sniper -t $host -m stealth -o -re
+
+echo " "
+echo " Enter'a Basarak Devam Edebilirsiniz . . .  "
+read enter
+}
+
+kesfetmeMOD()
+{
+    clear
+cd /root/Desktop/DSA-TOOL/Toollar/Sn1per
+    echo " "
+    echo -e "${BLUE}╦╔═╔═╗╔═╗╔═╗╔═╗╔╦╗╔╦╗╔═╗  ╔╦╗╔═╗╔╦╗"
+    echo -e "${BLUE}╠╩╗║╣ ╚═╗╠╣ ║╣  ║ ║║║║╣   ║║║║ ║ ║║"
+    echo -e "${BLUE}╩ ╩╚═╝╚═╝╚  ╚═╝ ╩ ╩ ╩╚═╝  ╩ ╩╚═╝═╩╝"  
+    echo -e "${BLUE} "                                                             
+    echo -e "${WHITE}CODED BY YANLIZ KURT ${GREEN}DarkSecArmy.COM | PcDunyasi.TV${RED}  [NO EDIT] "
+    echo -e "${GREEN}KESFETME MODU  ${YELLOW}" 
+    echo " " 
+echo "HEDEF : "
+read host
+echo "WORSPACE ALIAS :"
+read WORSPACE_ALIAS
+./sniper -t $host -m -w $WORSPACE_ALIAS
+
+echo " "
+echo " Enter'a Basarak Devam Edebilirsiniz . . .  "
+read enter
+}
+
+OZELPORTTARAMA()
+{
+    clear
+cd /root/Desktop/DSA-TOOL/Toollar/Sn1per
+    echo " "
+    echo -e "${BLUE}╔═╗╔═╗╔═╗╦    ╔═╗╔═╗╦═╗╔╦╗  ╔╦╗╔═╗╦═╗╔═╗╔╦╗╔═╗"
+    echo -e "${BLUE}║ ║╔═╝║╣ ║    ╠═╝║ ║╠╦╝ ║    ║ ╠═╣╠╦╝╠═╣║║║╠═╣"
+    echo -e "${BLUE}╚═╝╚═╝╚═╝╩═╝  ╩  ╚═╝╩╚═ ╩    ╩ ╩ ╩╩╚═╩ ╩╩ ╩╩ ╩"  
+    echo -e "${BLUE} "                                                             
+    echo -e "${WHITE}CODED BY YANLIZ KURT ${GREEN}DarkSecArmy.COM | PcDunyasi.TV${RED}  [NO EDIT] "
+    echo -e "${GREEN}OZEL PORT TARAMA ${YELLOW}" 
+    echo " " 
+echo "HEDEF : "
+read host
+echo "PORT :"
+read port
+./sniper -t -m -p $port
+
+echo " "
+echo " Enter'a Basarak Devam Edebilirsiniz . . .  "
+read enter
+}
+
+FULLPORTONLYSCANMODU()
+{
+    clear
+cd /root/Desktop/DSA-TOOL/Toollar/Sn1per
+    echo " "
+    echo -e "${BLUE}╔═╗╦ ╦╦  ╦  ╔═╗╔═╗╦═╗╔╦╗╔═╗╔╗╔╦ ╦ ╦  ╔═╗╔═╗╔═╗╔╗╔  ╔╦╗╔═╗╔╦╗╦ ╦"
+    echo -e "${BLUE}╠╣ ║ ║║  ║  ╠═╝║ ║╠╦╝ ║ ║ ║║║║║ ╚╦╝  ╚═╗║  ╠═╣║║║  ║║║║ ║ ║║║ ║"
+    echo -e "${BLUE}╚  ╚═╝╩═╝╩═╝╩  ╚═╝╩╚═ ╩ ╚═╝╝╚╝╩═╝╩   ╚═╝╚═╝╩ ╩╝╚╝  ╩ ╩╚═╝═╩╝╚═╝"  
+    echo -e "${BLUE} "                                                             
+    echo -e "${WHITE}CODED BY YANLIZ KURT ${GREEN}DarkSecArmy.COM | PcDunyasi.TV${RED}  [NO EDIT] "
+    echo -e "${GREEN}FULLPORTONLY SCAN MODU  ${YELLOW}" 
+    echo " " 
+echo "HEDEF : "
+read host
+./sniper -t $host -fp
+
+echo " "
+echo " Enter'a Basarak Devam Edebilirsiniz . . .  "
+read enter
+}
+
+PORTMODU()
+{
+    clear
+cd /root/Desktop/DSA-TOOL/Toollar/Sn1per
+    echo " "
+    echo -e "${BLUE}╔═╗╔═╗╦═╗╔╦╗  ╔╦╗╔═╗╦═╗╔═╗╔╦╗╔═╗  ╔╦╗╔═╗╔╦╗╦ ╦"
+    echo -e "${BLUE}╠═╝║ ║╠╦╝ ║    ║ ╠═╣╠╦╝╠═╣║║║╠═╣  ║║║║ ║ ║║║ ║"
+    echo -e "${BLUE}╩  ╚═╝╩╚═ ╩    ╩ ╩ ╩╩╚═╩ ╩╩ ╩╩ ╩  ╩ ╩╚═╝═╩╝╚═╝"  
+    echo -e "${BLUE} "                                                             
+    echo -e "${WHITE}CODED BY YANLIZ KURT ${GREEN}DarkSecArmy.COM | PcDunyasi.TV${RED}  [NO EDIT] "
+    echo -e "${GREEN}WEB MODU - SADECE PORT 80 + 443${YELLOW}" 
+    echo " " 
+echo "HEDEF : "
+read host
+echo "PORT  : "
+read port
+./sniper -t $host -m port -p $port
+
+echo " "
+echo " Enter'a Basarak Devam Edebilirsiniz . . .  "
+read enter
+}
+
+WEBMODU()
+{
+    clear
+cd /root/Desktop/DSA-TOOL/Toollar/Sn1per
+    echo " "
+    echo -e "${BLUE}╦ ╦╔═╗╔╗   ╔╦╗╔═╗╔╦╗╦ ╦"
+    echo -e "${BLUE}║║║║╣ ╠╩╗  ║║║║ ║ ║║║ ║"
+    echo -e "${BLUE}╚╩╝╚═╝╚═╝  ╩ ╩╚═╝═╩╝╚═╝"  
+    echo -e "${BLUE} "                                                             
+    echo -e "${WHITE}CODED BY YANLIZ KURT ${GREEN}DarkSecArmy.COM | PcDunyasi.TV${RED}  [NO EDIT] "
+    echo -e "${GREEN}PORT TARAMA MODU  ${YELLOW}" 
+    echo " " 
+echo "HEDEF : "
+read host
+./sniper -t $host -m web
+
+echo " "
+echo " Enter'a Basarak Devam Edebilirsiniz . . .  "
+read enter
+}
+
+HTTPWEBMODU()
+{
+    clear
+cd /root/Desktop/DSA-TOOL/Toollar/Sn1per
+    echo " "
+    echo -e "${YELLOW}╦ ╦╔╦╗╔╦╗╔═╗  ╦ ╦╔═╗╔╗   ╔╦╗╔═╗╔╦╗╦ ╦ "
+    echo -e "╠═╣ ║  ║ ╠═╝  ║║║║╣ ╠╩╗  ║║║║ ║ ║║║ ║ " 
+    echo -e "╩ ╩ ╩  ╩ ╩    ╚╩╝╚═╝╚═╝  ╩ ╩╚═╝═╩╝╚═╝ " 
+    echo -e "${BLUE} "                                                             
+    echo -e "${WHITE}CODED BY YANLIZ KURT ${GREEN}DarkSecArmy.COM | PcDunyasi.TV${RED}  [NO EDIT] "
+    echo -e "${GREEN}HTTP WEB MODU  ${YELLOW}" 
+    echo " " 
+echo "HEDEF : "
+read host
+echo "HEDEF PORT : "
+read port
+./sniper -t $host -m webporthttp -p $port
+
+echo " "
+echo " Enter'a Basarak Devam Edebilirsiniz . . .  "
+read enter
+}
+
+HTTPSWEBMODU()
+{
+    clear
+cd /root/Desktop/DSA-TOOL/Toollar/Sn1per
+    echo " "
+    echo -e "${YELLOW}╦ ╦╔╦╗╔╦╗╔═╗╔═╗  ╦ ╦╔═╗╔╗   ╔╦╗╔═╗╔╦╗╦ ╦"
+    echo -e "╠═╣ ║  ║ ╠═╝╚═╗  ║║║║╣ ╠╩╗  ║║║║ ║ ║║║ ║"
+    echo -e "╩ ╩ ╩  ╩ ╩  ╚═╝  ╚╩╝╚═╝╚═╝  ╩ ╩╚═╝═╩╝╚═╝" 
+    echo -e "${BLUE} "                                                             
+    echo -e "${WHITE}CODED BY YANLIZ KURT ${GREEN}DarkSecArmy.COM | PcDunyasi.TV${RED}  [NO EDIT] "
+    echo -e "${GREEN}HTTPS WEB MODU  ${YELLOW}" 
+    echo " " 
+echo "HEDEF : "
+read host
+echo "HEDEF PORT : "
+read port
+./sniper -t $host -m webporthttps -p $port
+
+echo " "
+echo " Enter'a Basarak Devam Edebilirsiniz . . .  "
+read enter
+}
+
+BRUTEFORCEENABLED()
+{
+    clear
+cd /root/Desktop/DSA-TOOL/Toollar/Sn1per
+    echo " "
+    echo -e "${RED}╔╗ ╦═╗╦ ╦╔╦╗╔═╗  ╔═╗╔═╗╦═╗╔═╗╔═╗"
+    echo -e "╠╩╗╠╦╝║ ║ ║ ║╣   ╠╣ ║ ║╠╦╝║  ║╣ "
+    echo -e "╚═╝╩╚═╚═╝ ╩ ╚═╝  ╚  ╚═╝╩╚═╚═╝╚═╝" 
+    echo -e "${BLUE} "                                                             
+    echo -e "${WHITE}CODED BY YANLIZ KURT ${GREEN}DarkSecArmy.COM | PcDunyasi.TV${RED}  [NO EDIT] "
+    echo -e "${GREEN}BRUTE FORCE ENABLE  ${YELLOW}" 
+    echo " " 
+echo "HEDEF : "
+read host
+./sniper -t $host --bruteforce
+
+echo " "
+echo " Enter'a Basarak Devam Edebilirsiniz . . .  "
+read enter
+}
+
+AIRSTRIKEMODU()
+{
+    clear
+cd /root/Desktop/DSA-TOOL/Toollar/Sn1per
+    echo " "
+    echo -e "${RED}╔═╗╦╦═╗╔═╗╔╦╗╦═╗╦╦╔═╔═╗  ╔╦╗╔═╗╔╦╗╦ ╦"
+    echo -e "${RED}╠═╣║╠╦╝╚═╗ ║ ╠╦╝║╠╩╗║╣   ║║║║ ║ ║║║ ║"
+    echo -e "${RED}╩ ╩╩╩╚═╚═╝ ╩ ╩╚═╩╩ ╩╚═╝  ╩ ╩╚═╝═╩╝╚═╝" 
+    echo -e "${BLUE} "                                                             
+    echo -e "${WHITE}CODED BY YANLIZ KURT ${GREEN}DarkSecArmy.COM | PcDunyasi.TV${RED}  [NO EDIT] "
+    echo -e "${GREEN}AIRSTRIKE MODU  ${YELLOW}" 
+    echo -e " ORNEK : /root/Desktop/targets.txt NOT ' IŞARETI OLMAYACAK "
+    echo " " 
+echo "SITE LISTENIZ ? : "
+read list
+./sniper -f /full/path/to/targets.txt --mode airstrike
+
+echo " "
+echo " Enter'a Basarak Devam Edebilirsiniz . . .  "
+read enter
+}
+
+TOPLUMOD()
+{
+    clear
+cd /root/Desktop/DSA-TOOL/Toollar/Sn1per
+    echo " "
+    echo -e "${RED}╔╦╗╔═╗╔═╗╦  ╦ ╦  ╔╦╗╔═╗╔╦╗"
+    echo -e "${RED} ║ ║ ║╠═╝║  ║ ║  ║║║║ ║ ║║"
+    echo -e "${RED} ╩ ╚═╝╩  ╩═╝╚═╝  ╩ ╩╚═╝═╩╝" 
+    echo -e "${BLUE} "                                                             
+    echo -e "  ${WHITE}CODED BY YANLIZ KURT ${GREEN}DarkSecArmy.COM | PcDunyasi.TV${RED}  [NO EDIT] "
+    echo -e "  ${BLUE} TOPLU MOD ${YELLOW}  "
+    echo -e " ORNEK : /root/Desktop/targets.txt NOT ' IŞARETI OLMAYACAK "
+    echo " " 
+echo "SITE LISTENIZ ? : "
+read list
+echo "WORKSPACE ALIAS ? :" 
+read workspace
+./sniper -f $list --mode nuke --workspace $workspace
+
+echo " "
+echo " Enter'a Basarak Devam Edebilirsiniz . . .  "
+read enter
+}
+
+LOOTREIMPORTFONKSIYONU()
+{
+    clear
+cd /root/Desktop/DSA-TOOL/Toollar/Sn1per
+    echo " "
+    echo -e "${RED}╦═╗╔═╗╦╔╦╗╔═╗╔═╗╦═╗╔╦╗"
+    echo -e "${RED}╠╦╝║╣ ║║║║╠═╝║ ║╠╦╝ ║ "
+    echo -e "${RED}╩╚═╚═╝╩╩ ╩╩  ╚═╝╩╚═ ╩ " 
+    echo -e "${BLUE} "                                                             
+    echo -e "${WHITE}CODED BY YANLIZ KURT ${GREEN}DarkSecArmy.COM | PcDunyasi.TV${RED}  [NO EDIT] "
+    echo -e "${GREEN}LOOT REIMPORT FONKSIYONU --reimport ${YELLOW}" 
+    echo " " 
+echo "WORKSPACE ALIAS ? :" 
+read workspace
+./sniper -w $workspace --reimport
+
+echo " "
+echo " Enter'a Basarak Devam Edebilirsiniz . . .  "
+read enter
+}
+
+LOOTREIMPORTFONKSIYONUderoad()
+{
+    clear
+cd /root/Desktop/DSA-TOOL/Toollar/Sn1per
+    echo " "
+    echo -e "${WHITE}╦═╗╔═╗╦  ╔═╗╔═╗╔╦╗"
+    echo -e "${WHITE}╠╦╝║╣ ║  ║ ║╠═╣ ║║"
+    echo -e "${WHITE}╩╚═╚═╝╩═╝╚═╝╩ ╩═╩╝" 
+    echo -e "${BLUE} "                                                             
+    echo -e "${WHITE}CODED BY YANLIZ KURT ${GREEN}DarkSecArmy.COM | PcDunyasi.TV${RED}  [NO EDIT] "
+    echo -e "${GREEN}LOOT REIMPORT FONKSIYONU --reload  ${YELLOW}" 
+    echo " " 
+echo "WORKSPACE ALIAS ? :" 
+read workspace
+./sniper -w $workspace --reload
+
+echo " "
+echo " Enter'a Basarak Devam Edebilirsiniz . . .  "
+read enter
+}
+
+UPDATE()
+{
+    clear
+cd /root/Desktop/DSA-TOOL/Toollar/Sn1per
+    echo " "
+./sniper -u
+
+echo " "
+echo " Enter'a Basarak Devam Edebilirsiniz . . .  "
+read enter
+}
+
+exit_script1()
+{
+  exit 1
+}
+
+Take_input1()
+{
+clear
+while :
+do
+clear                   
+echo -e "${WHITE}                ____ "
+echo -e "${RED}    _________  /  _/___  ___  _____"
+echo -e "${WHITE}   / ___/ __ \ / // __ \/ _ \/ ___/"
+echo -e "${RED}  (__  ) / / // // /_/ /  __/ /    "
+echo -e "${WHITE} /____/_/ /_/___/ .___/\___/_/     "
+echo -e "${RED}               /_/                 "
+echo -e "${WHITE} "
+echo -e "${WHITE}  "${WHITE}
+    echo -e "${WHITE}CODED BY YANLIZ KURT ${GREEN}DarkSecArmy.COM | PcDunyasi.TV${RED}  [NO EDIT] "
+    echo -e "${WHITE} "${GREEN}CTRL + Z YAPARAK SCRIPTDEN CIKIS YAPABILIRSINIZ
+    echo -e "${RED}==================== PARAMETRELER ====================+ "
+    echo -e "${LIGHTBLUE}[1]${WHITE}GIT CLONE SNIPER${LIGHTBLUE}                          "    	
+    echo -e "${LIGHTBLUE}[2]${WHITE}SN1PER KURULUM${LIGHTBLUE}                          " 
+    echo -e "${LIGHTBLUE}[3]${WHITE}NORMAL MOD${LIGHTBLUE}                        "
+    echo -e "${LIGHTBLUE}[4]${WHITE}NORMAL MOD + OSINT + RECON${LIGHTBLUE}                        "
+    echo -e "${LIGHTBLUE}[5]${WHITE}STEALTH MOD + OSINT + RECON${LIGHTBLUE}                         "
+    echo -e "${LIGHTBLUE}[6]${WHITE}KESFETME MOD${LIGHTBLUE}                          "     
+    echo -e "${LIGHTBLUE}[7]${WHITE}ÖZEL PORT TARAMA${LIGHTBLUE}                        "
+    echo -e "${LIGHTBLUE}[8]${WHITE}FULLPORTONLY SCAN MODU${LIGHTBLUE}                       "
+    echo -e "${LIGHTBLUE}[9]${WHITE}PORT TARAMA MODU${LIGHTBLUE}                          " 
+    echo -e "${LIGHTBLUE}[10]${WHITE}WEB MODU - SADECE PORT 80 + 443${LIGHTBLUE}                          " 
+    echo -e "${LIGHTBLUE}[11]${WHITE}HTTP WEB PORT MODU${LIGHTBLUE}                          " 
+    echo -e "${LIGHTBLUE}[12]${WHITE}HTTPS WEB PORT MODU${LIGHTBLUE}                         " 
+    echo -e "${LIGHTBLUE}[13]${WHITE}BRUTEFORCE ENABLE${LIGHTBLUE}    " 
+    echo -e "${LIGHTBLUE}[14]${WHITE}AIRSTRIKE MODU${LIGHTBLUE}              "
+    echo -e "${LIGHTBLUE}[15]${WHITE}Hedef Listesi İle Nuke Modu,BruteForce Yetkili,Fullportscan Modu${LIGHTBLUE}"
+    echo -e "${LIGHTBLUE}[16]${WHITE}LOOT REIMPORT FONKSIYONU --reimport${LIGHTBLUE}              "
+    echo -e "${LIGHTBLUE}[17]${WHITE}LOOT REIMPORT FONKSIYONU --deroad${LIGHTBLUE}              "
+    echo -e "${LIGHTBLUE}[18]${WHITE}UPDATE${LIGHTBLUE}              "
+    echo -e "${RED}======================================================+ "
+    echo -n "Menuden Parametreleri Secebilirsiniz [1 - 18] "
+    read yourch
+    case $yourch in
+      1) gitKurulum ;;
+      2) Kurulum ;;
+      3) normalTARAMA ;;
+      4) normalOSINTRECON ;;
+      5) stealthMODOSINTRECON ;;
+      6) kesfetmeMOD ;;
+      7) OZELPORTTARAMA ;;
+      8) FULLPORTONLYSCANMODU ;;
+      9) PORTMODU ;;
+      10) WEBMODU ;;
+      11) HTTPWEBMODU ;;
+      12) HTTPSWEBMODU ;;
+      13) BRUTEFORCEENABLED ;;
+      14) AIRSTRIKEMODU ;;
+      15) TOPLUMOD ;;
+      16) LOOTREIMPORTFONKSIYONU ;;
+      17) LOOTREIMPORTFONKSIYONUderoad ;;
+      18) UPDATE ;;
+      ex) echo "As you Command" ;  exit 1  ;;
+      *) echo "HATALI RAKAM GIRDINIZ" ;
+         echo "Enter Basarak Menuye Dönebilirsiniz . . ." ; read ;;
+ esac
+done # end_while
+}
+#
+# Set trap to for CTRL+C interrupt i.e. Install our error handler
+# When occurs it first it calls del_file() and then exit
+#
+trap exit_script 2
+#
+# Call our user define function : Take_input1
+#
+Take_input1

@@ -1,0 +1,362 @@
+#!/bin/bash
+BLACK='\e[0;30m'
+BLUE='\e[0;34m'
+GREEN='\e[0;32m'
+CYAN='\e[0;36m'
+RED='\e[0;31m'
+PURPLE='\e[0;35m'
+BROWN='\e[0;33m'
+LIGHTGRAY='\e[0;37m'
+DARKGRAY='\e[1;30m'
+LIGHTBLUE='\e[1;34m'
+LIGHTGREEN='\e[1;32m'
+LIGHTCYAN='\e[1;36m'
+LIGHTRED='\e[1;31m'
+LIGHTPURPLE='\e[1;35m'
+YELLOW='\e[1;33m'
+WHITE='\e[1;37m'
+NC='\e[0m'              
+
+exit_script()
+{
+cd /root/Desktop/DSA-TOOL
+./DSA-TOOL
+}
+
+normalTEST()
+{
+    clear
+    echo  " "
+    echo -e "	${YELLOW}███╗   ██╗ ██████╗ ██████╗ ███╗   ███╗ █████╗ ██╗     "
+    echo -e "	${YELLOW}████╗  ██║██╔═══██╗██╔══██╗████╗ ████║██╔══██╗██║     "
+    echo -e "	${YELLOW}██╔██╗ ██║██║   ██║██████╔╝██╔████╔██║███████║██║     "
+    echo -e "	${YELLOW}██║╚██╗██║██║   ██║██╔══██╗██║╚██╔╝██║██╔══██║██║     "
+    echo -e "	${YELLOW}██║ ╚████║╚██████╔╝██║  ██║██║ ╚═╝ ██║██║  ██║███████╗"
+    echo -e "	${YELLOW}╚═╝  ╚═══╝ ╚═════╝ ╚═╝  ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝╚══════╝"
+    echo "  |-----------------------------------------------------------------------| "
+    echo "  |                   DarkSecArmy.COM | PcDunyasi.TV                      |  "
+    echo "  |-----------------------------------------------------------------------| " 
+    echo "  |                          NORMAL TARAMA                                | "
+    echo "  |-----------------------------------------------------------------------| "
+    echo "                CTRL + C YAPARAK MENUYE GERI DONEBILIRISINIZ "
+    echo "      "
+echo "HEDEF :"
+read host
+uniscan -u $host
+echo " "
+echo " Enter'a Basarak Devam Edebilirsiniz . . .  "
+read enter
+}
+
+adminTARAMA()
+{
+    clear
+    echo  " "
+    echo -e "	${YELLOW} █████╗ ██████╗ ███╗   ███╗██╗███╗   ██╗"
+    echo -e "	${YELLOW}██╔══██╗██╔══██╗████╗ ████║██║████╗  ██║"
+    echo -e "	${YELLOW}███████║██║  ██║██╔████╔██║██║██╔██╗ ██║"
+    echo -e "	${YELLOW}██╔══██║██║  ██║██║╚██╔╝██║██║██║╚██╗██║"
+    echo -e "	${YELLOW}██║  ██║██████╔╝██║ ╚═╝ ██║██║██║ ╚████║"
+    echo -e "	${YELLOW}╚═╝  ╚═╝╚═════╝ ╚═╝     ╚═╝╚═╝╚═╝  ╚═══╝ ${YELLOW}"
+    echo "  |-----------------------------------------------------------------------| "
+    echo "  |                    DarkSecArmy.COM | PcDunyasi.TV                     |  "
+    echo "  |-----------------------------------------------------------------------| " 
+    echo "  |                         ADMIN PANEL BULMA                             | "
+    echo "  |-----------------------------------------------------------------------| "
+    echo "                CTRL + C YAPARAK MENUYE GERI DONEBILIRISINIZ "
+echo "HEDEF :"
+read host
+uniscan -u $host -q
+echo " "
+echo " Enter'a Basarak Devam Edebilirsiniz . . .  "
+read enter
+}
+
+DIZINtarama()
+{
+    clear
+    echo  " "
+    echo -e "${BLUE}   ██████╗ ██╗███████╗██╗███╗   ██╗                    "
+    echo -e "   ██╔══██╗██║╚══███╔╝██║████╗  ██║                    "
+    echo -e "   ██║  ██║██║  ███╔╝ ██║██╔██╗ ██║                    "
+    echo -e "   ██║  ██║██║ ███╔╝  ██║██║╚██╗██║                    "
+    echo -e "   ██████╔╝██║███████╗██║██║ ╚████║                    "
+    echo -e "   ╚═════╝ ╚═╝╚══════╝╚═╝╚═╝  ╚═══╝                    "
+    echo -e "                                                    "
+    echo -e "   ████████╗ █████╗ ██████╗  █████╗ ███╗   ███╗ █████╗ "
+    echo -e "   ╚══██╔══╝██╔══██╗██╔══██╗██╔══██╗████╗ ████║██╔══██╗"
+    echo -e "      ██║   ███████║██████╔╝███████║██╔████╔██║███████║"
+    echo -e "      ██║   ██╔══██║██╔══██╗██╔══██║██║╚██╔╝██║██╔══██║"
+    echo -e "      ██║   ██║  ██║██║  ██║██║  ██║██║ ╚═╝ ██║██║  ██║"
+    echo -e "      ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝${YELLOW}"                 
+    echo "  |-----------------------------------------------------------------------| "
+    echo "  |                   DarkSecArmy.COM | PcDunyasi.TV                      | "
+    echo "  |-----------------------------------------------------------------------| "
+    echo "  |                          DIZIN TARAMA ISLEMI                          | "
+    echo "  |-----------------------------------------------------------------------| "
+    echo "                CTRL + C YAPARAK MENUYE GERI DONEBILIRISINIZ "
+echo "HEDEF :"
+read host
+uniscan -u $host -w
+echo " "
+echo " Enter'a Basarak Devam Edebilirsiniz . . .  "
+read enter
+}
+
+ACIKtarama()
+{
+    clear
+    echo  " "
+    echo -e "  █████╗  ██████╗██╗██╗  ██╗                         "
+    echo -e " ██╔══██╗██╔════╝██║██║ ██╔╝                         "
+    echo -e " ███████║██║     ██║█████╔╝                          "
+    echo -e " ██╔══██║██║     ██║██╔═██╗                          "
+    echo -e " ██║  ██║╚██████╗██║██║  ██╗                         "
+    echo -e " ╚═╝  ╚═╝ ╚═════╝╚═╝╚═╝  ╚═╝                         "
+    echo -e "                                                     "
+    echo -e " ████████╗ █████╗ ██████╗  █████╗ ███╗   ███╗ █████╗ "
+    echo -e " ╚══██╔══╝██╔══██╗██╔══██╗██╔══██╗████╗ ████║██╔══██╗"
+    echo -e "    ██║   ███████║██████╔╝███████║██╔████╔██║███████║"
+    echo -e "    ██║   ██╔══██║██╔══██╗██╔══██║██║╚██╔╝██║██╔══██║"
+    echo -e "    ██║   ██║  ██║██║  ██║██║  ██║██║ ╚═╝ ██║██║  ██║"
+    echo -e "    ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝"
+    echo -e "                                                     ${YELLOW}"                
+    echo "  |-----------------------------------------------------------------------| "
+    echo "  |                   DarkSecArmy.COM | PcDunyasi.TV                      | "
+    echo "  |-----------------------------------------------------------------------| "
+    echo "  |                         ACIK TARAMA ISLEMI                            | "
+    echo "  |-----------------------------------------------------------------------| "
+    echo "                CTRL + C YAPARAK MENUYE GERI DONEBILIRISINIZ "
+echo "HEDEF :"
+read host
+uniscan -u $host -d
+echo " "
+echo " Enter'a Basarak Devam Edebilirsiniz . . .  "
+read enter
+}
+
+WEBSERVERbilgisi()
+{
+    clear
+    echo  " "
+    echo -e "    ${BLUE}██╗    ██╗███████╗██████╗ "
+    echo -e "    ██║    ██║██╔════╝██╔══██╗"
+    echo -e "    ██║ █╗ ██║█████╗  ██████╔╝"
+    echo -e "    ██║███╗██║██╔══╝  ██╔══██╗"
+    echo -e "    ╚███╔███╔╝███████╗██████╔╝"
+    echo -e "     ╚══╝╚══╝ ╚══════╝╚═════╝ "
+    echo -e "    ${RED}███████╗███████╗██████╗ ██╗   ██╗███████╗██████╗   "  
+    echo -e "    ██╔════╝██╔════╝██╔══██╗██║   ██║██╔════╝██╔══██╗    "
+    echo -e "    ███████╗█████╗  ██████╔╝██║   ██║█████╗  ██████╔╝    "
+    echo -e "    ╚════██║██╔══╝  ██╔══██╗╚██╗ ██╔╝██╔══╝  ██╔══██╗    "
+    echo -e "    ███████║███████╗██║  ██║ ╚████╔╝ ███████╗██║  ██║    "
+    echo -e "    ╚══════╝╚══════╝╚═╝  ╚═╝  ╚═══╝  ╚══════╝╚═╝  ╚═╝    "
+    echo -e "                                                     "
+    echo -e "    ██████╗ ██╗██╗      ██████╗ ██╗███████╗██╗           "
+    echo -e "    ██╔══██╗██║██║     ██╔════╝ ██║██╔════╝██║           "
+    echo -e "    ██████╔╝██║██║     ██║  ███╗██║███████╗██║          " 
+    echo -e "    ██╔══██╗██║██║     ██║   ██║██║╚════██║██║         "  
+    echo -e "    ██████╔╝██║███████╗╚██████╔╝██║███████║██║        "   
+    echo -e "    ╚═════╝ ╚═╝╚══════╝ ╚═════╝ ╚═╝╚══════╝╚═╝       "    
+    echo -e "                                               ${YELLOW}"                
+    echo "  |-----------------------------------------------------------------------| "
+    echo "  |                   DarkSecArmy.COM | PcDunyasi.TV                      | "
+    echo "  |-----------------------------------------------------------------------| "
+    echo "  |                        WEB SERVER BILGISI                             | "
+    echo "  |-----------------------------------------------------------------------| "
+    echo "                CTRL + C YAPARAK MENUYE GERI DONEBILIRISINIZ "
+echo "HEDEF :"
+read host
+uniscan -u $host -g
+echo " "
+echo " Enter'a Basarak Devam Edebilirsiniz . . .  "
+read enter
+}
+
+robotxtBULMA ()
+{
+    clear
+    echo  " "
+    echo -e "${WHITE}██████╗  ██████╗ ██████╗  ██████╗ ████████╗████████╗██╗  ██╗████████╗"
+    echo -e "${WHITE}██╔══██╗██╔═══██╗██╔══██╗██╔═══██╗╚══██╔══╝╚══██╔══╝╚██╗██╔╝╚══██╔══╝"
+    echo -e "${WHITE}██████╔╝██║   ██║██████╔╝██║   ██║   ██║      ██║    ╚███╔╝    ██║   "
+    echo -e "${WHITE}██╔══██╗██║   ██║██╔══██╗██║   ██║   ██║      ██║    ██╔██╗    ██║   "
+    echo -e "${WHITE}██║  ██║╚██████╔╝██████╔╝╚██████╔╝   ██║██╗   ██║   ██╔╝ ██╗   ██║   "
+    echo -e "${WHITE}╚═╝  ╚═╝ ╚═════╝ ╚═════╝  ╚═════╝    ╚═╝╚═╝   ╚═╝   ╚═╝  ╚═╝   ╚═╝   "
+    echo -e "                                                                 ${YELLOW}"
+    echo "  |-----------------------------------------------------------------------| "
+    echo "  |                   DarkSecArmy.COM | PcDunyasi.TV                      | "
+    echo "  |-----------------------------------------------------------------------| "
+    echo "  |                   ROBOT.TXT,SITEMAP.XML TARAMSI                       | "
+    echo "  |-----------------------------------------------------------------------| "
+    echo "                CTRL + C YAPARAK MENUYE GERI DONEBILIRISINIZ "
+echo "HEDEF :"
+read host
+uniscan -u $host -e
+echo " "
+echo " Enter'a Basarak Devam Edebilirsiniz . . .  "
+read enter
+}
+
+SERVERbilgisi ()
+{
+    clear
+    echo  " "
+    echo -e "    ${RED}███████╗███████╗██████╗ ██╗   ██╗███████╗██████╗   "  
+    echo -e "    ██╔════╝██╔════╝██╔══██╗██║   ██║██╔════╝██╔══██╗    "
+    echo -e "    ███████╗█████╗  ██████╔╝██║   ██║█████╗  ██████╔╝    "
+    echo -e "    ╚════██║██╔══╝  ██╔══██╗╚██╗ ██╔╝██╔══╝  ██╔══██╗    "
+    echo -e "    ███████║███████╗██║  ██║ ╚████╔╝ ███████╗██║  ██║    "
+    echo -e "    ╚══════╝╚══════╝╚═╝  ╚═╝  ╚═══╝  ╚══════╝╚═╝  ╚═╝    "
+    echo -e "                                                     "
+    echo -e "    ██████╗ ██╗██╗      ██████╗ ██╗███████╗██╗           "
+    echo -e "    ██╔══██╗██║██║     ██╔════╝ ██║██╔════╝██║           "
+    echo -e "    ██████╔╝██║██║     ██║  ███╗██║███████╗██║          " 
+    echo -e "    ██╔══██╗██║██║     ██║   ██║██║╚════██║██║         "  
+    echo -e "    ██████╔╝██║███████╗╚██████╔╝██║███████║██║        "   
+    echo -e "    ╚═════╝ ╚═╝╚══════╝ ╚═════╝ ╚═╝╚══════╝╚═╝       "  
+    echo "  |-----------------------------------------------------------------------| "
+    echo "  |                   DarkSecArmy.COM | PcDunyasi.TV                      | "
+    echo "  |-----------------------------------------------------------------------| "
+    echo "  |                          SERVER BILGISI                               | "
+    echo "  |-----------------------------------------------------------------------| "
+    echo "                CTRL + C YAPARAK MENUYE GERI DONEBILIRISINIZ "
+echo "HEDEF :"
+read host
+uniscan -u $host -j
+echo " "
+echo " Enter'a Basarak Devam Edebilirsiniz . . .  "
+read enter
+}
+
+sqlxssTARAMA ()
+{
+    clear
+    echo  " "
+    echo -e "	${BLUE}  █████╗  ██████╗██╗██╗  ██╗                     "
+    echo -e "	${WHITE} ██╔══██╗██╔════╝██║██║ ██╔╝                     "
+    echo -e "	${BLUE} ███████║██║     ██║█████╔╝                      "
+    echo -e "	${WHITE} ██╔══██║██║     ██║██╔═██╗                      "
+    echo -e "	${BLUE} ██║  ██║╚██████╗██║██║  ██╗                     "
+    echo -e "	${WHITE} ╚═╝  ╚═╝ ╚═════╝╚═╝╚═╝  ╚═╝                     "
+    echo -e "	${CYAN}                                                 "
+    echo -e "	${BLUE} ████████╗███████╗███████╗██████╗ ██╗████████╗██╗"
+    echo -e "	${WHITE} ╚══██╔══╝██╔════╝██╔════╝██╔══██╗██║╚══██╔══╝██║"
+    echo -e "	${BLUE}    ██║   █████╗  ███████╗██████╔╝██║   ██║   ██║"
+    echo -e "	${WHITE}    ██║   ██╔══╝  ╚════██║██╔═══╝ ██║   ██║   ██║"
+    echo -e "	${BLUE}    ██║   ███████╗███████║██║     ██║   ██║   ██║"
+    echo -e "	${WHITE}    ╚═╝   ╚══════╝╚══════╝╚═╝     ╚═╝   ╚═╝   ╚═╝"
+    echo -e "	${CYAN}                                                 ${YELLOW}"
+    echo "  |-----------------------------------------------------------------------| "
+    echo "  |                   DarkSecArmy.COM | PcDunyasi.TV                      | "
+    echo "  |-----------------------------------------------------------------------| "
+    echo "  |                    SQL,XSS,RFI VB. ACIK TESPITI                       | "
+    echo "  |-----------------------------------------------------------------------| "
+    echo "                CTRL + C YAPARAK MENUYE GERI DONEBILIRISINIZ "
+echo "HEDEF :"
+read host
+uniscan -u $host -s
+echo " "
+echo " Enter'a Basarak Devam Edebilirsiniz . . .  "
+read enter
+}
+
+topluTARAMA ()
+{
+    clear
+    echo  " "
+    echo -e "	${CYAN}████████╗ ██████╗ ██████╗ ██╗     ██╗   ██╗"
+    echo -e "	${CYAN}╚══██╔══╝██╔═══██╗██╔══██╗██║     ██║   ██║"
+    echo -e "	${CYAN}   ██║   ██║   ██║██████╔╝██║     ██║   ██║"
+    echo -e "	${CYAN}   ██║   ██║   ██║██╔═══╝ ██║     ██║   ██║"
+    echo -e "	${CYAN}   ██║   ╚██████╔╝██║     ███████╗╚██████╔╝"
+    echo -e "	${CYAN}   ╚═╝    ╚═════╝ ╚═╝     ╚══════╝ ╚═════╝ ${YELLOW}"
+    echo "  |-----------------------------------------------------------------------| "
+    echo "  |                   DarkSecArmy.COM | PcDunyasi.TV                      | "
+    echo "  |-----------------------------------------------------------------------| "
+    echo "  |                   TOPLU PARAMETRE TARAMA ISLEMI                       | "
+    echo "  |-----------------------------------------------------------------------| "
+    echo "                CTRL + C YAPARAK MENUYE GERI DONEBILIRISINIZ "
+echo "HEDEF :"
+read host
+uniscan -u $host -qwesd
+echo " "
+echo " Enter'a Basarak Devam Edebilirsiniz . . .  "
+read enter
+}
+
+
+DSA ()
+{
+    clear
+    echo " "
+    echo -e "${RED}Misyon - Kim Bu “Kara Güvenlik Ordusu ?${WHITE}
+
+DarkSecArmy.COM 2018 yılında kurulmus bir Hack/Güvenlik Platforumudur. Kuruluş sebebimiz yapabildiklerimizin üzerine her geçen gün birşeyler ekleyerek yol katetmektir. Hack üzerine çalışmalarımız tamamen Türkiye’ye karşı olan ülkelerin aleyhine saldırılardır. Türk lokasyonlu sistemlere zarar vermememizin sebebi korku değil tamamen doğup büyüdüğümüz ülkemize saygımızdandır. Rotamız yapabildiklerimizin sınırlarını aşmak öğrenmek ve öğretmektir. Forumumuz sadece Hack/Güvenliğe bağlı kalmıyarak grafik,yazılım,donanım,ağ, vb. gibi alanlarada önem göstermektedir. Misyonumuzun Gidişatını forumumuzu takip ederek görebilirsiniz."
+
+echo " "
+echo " Enter'a Basarak Devam Edebilirsiniz . . .  "
+read enter
+}
+
+exit_script1()
+{
+  exit 1
+}
+
+Take_input1()
+{
+clear
+while :
+do
+clear                   
+echo -e "${WHITE}
+██╗   ██╗███╗   ██╗██╗███████╗ ██████╗ █████╗ ███╗   ██╗    ████████╗ ██████╗  ██████╗ ██╗     ${BLUE}    
+██║   ██║████╗  ██║██║██╔════╝██╔════╝██╔══██╗████╗  ██║    ╚══██╔══╝██╔═══██╗██╔═══██╗██║     ${WHITE}   
+██║   ██║██╔██╗ ██║██║███████╗██║     ███████║██╔██╗ ██║       ██║   ██║   ██║██║   ██║██║     ${BLUE}   
+██║   ██║██║╚██╗██║██║╚════██║██║     ██╔══██║██║╚██╗██║       ██║   ██║   ██║██║   ██║██║     ${WHITE}   
+╚██████╔╝██║ ╚████║██║███████║╚██████╗██║  ██║██║ ╚████║       ██║   ╚██████╔╝╚██████╔╝███████╗${BLUE}
+ ╚═════╝ ╚═╝  ╚═══╝╚═╝╚══════╝ ╚═════╝╚═╝  ╚═╝╚═╝  ╚═══╝       ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝${WHITE}
+${WHITE}"
+    echo -e "${WHITE}CODED BY YANLIZ KURT ${LIGHTBLUE}DarkSecArmy.COM | PcDunyasi.TV ${WHITE} ${RED}[EDIT YASAKTIR] "
+    echo -e "${WHITE} "${GREEN}CTRL + Z YAPARAK SCRIPTDEN CIKIS YAPABILIRSINIZ
+    echo -e "${RED}================= Parametreler ================+ "	
+    echo -e "${LIGHTBLUE}[1]${WHITE}NORMAL TARAMA -u${LIGHTBLUE}" 
+    echo -e "${LIGHTBLUE}[2]${WHITE}ADMIN PANEL BULMA -q${LIGHTBLUE}"
+    echo -e "${LIGHTBLUE}[3]${WHITE}DIZIN TARAMASI -w${LIGHTBLUE}"
+    echo -e "${LIGHTBLUE}[4]${WHITE}ACIK TARAMA -d${LIGHTBLUE}"     
+    echo -e "${LIGHTBLUE}[5]${WHITE}WEB SERVER BILGISI -g${LIGHTBLUE}"     
+    echo -e "${LIGHTBLUE}[6]${WHITE}ROBOT.TXT,SITEMAP.XML TARAMSI -e${LIGHTBLUE}"   
+    echo -e "${LIGHTBLUE}[7]${WHITE}SERVER BILGISI -j${LIGHTBLUE}"
+    echo -e "${LIGHTBLUE}[8]${WHITE}SQL,XSS,RFI ACIK TARAMA -s${LIGHTBLUE}"
+    echo -e "${LIGHTBLUE}[9]${WHITE}TOPLU TARAMA -qwesd ${LIGHTBLUE}"
+    echo -e "${RED}==============================================+"
+    echo -e "${LIGHTBLUE}[10]${WHITE}Kim Bu ${RED}DARKSECARMY ${LIGHTBLUE}?"		
+    echo -n "Menuden Parametreleri Secebilirsiniz [1 - 10] "
+    read yourch
+    case $yourch in
+      1) normalTEST ;;
+      2) adminTARAMA ;;
+      3) DIZINtarama ;;
+      4) ACIKtarama ;;
+      5) WEBSERVERbilgisi ;;
+      6) robotxtBULMA ;;
+      7) SERVERbilgisi ;;
+      8) sqlxssTARAMA ;;
+      9) topluTARAMA ;;
+      10) DSA ;;
+      ex) echo "As you Command" ;  exit 1  ;;
+      *) echo "HATALI RAKAM GIRDINIZ" ;
+         echo "Enter Basarak Menuye Dönebilirsiniz . . ." ; read ;;
+ esac
+done # end_while
+}
+#
+# Set trap to for CTRL+C interrupt i.e. Install our error handler
+# When occurs it first it calls del_file() and then exit
+#
+trap exit_script 2
+#
+# Call our user define function : Take_input1
+#
+Take_input1
