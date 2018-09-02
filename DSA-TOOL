@@ -1,0 +1,155 @@
+#!/bin/bash
+BLACK='\e[0;30m'
+BLUE='\e[0;34m'
+GREEN='\e[0;32m'
+CYAN='\e[0;36m'
+RED='\e[0;31m'
+PURPLE='\e[0;35m'
+BROWN='\e[0;33m'
+LIGHTGRAY='\e[0;37m'
+DARKGRAY='\e[1;30m'
+LIGHTBLUE='\e[1;34m'
+LIGHTGREEN='\e[1;32m'
+LIGHTCYAN='\e[1;36m'
+LIGHTRED='\e[1;31m'
+LIGHTPURPLE='\e[1;35m'
+YELLOW='\e[1;33m'
+WHITE='\e[1;37m'
+NC='\e[0m'              
+
+exit_script()
+{
+  ./DSA-TOOL
+}
+
+HpingTools()
+{
+    clear
+cd /root/Desktop/DSA-TOOL/Toollar/Hping3-Tool
+./hping3
+echo " "
+echo " Enter'a Basarak Devam Edebilirsiniz . . .  "
+read enter
+}
+
+wpscanTOOL ()
+{
+    clear
+    echo " "
+cd /root/Desktop/DSA-TOOL/Toollar/WpScan-Tool
+./wpscan
+echo " "
+echo " Enter'a Basarak Devam Edebilirsiniz . . .  "
+read enter
+}
+
+niktoTOOL ()
+{
+    clear
+    echo "  "
+cd /root/Desktop/DSA-TOOL/Toollar/Nikto-Tools
+./nikto
+echo " "
+echo " Enter'a Basarak Devam Edebilirsiniz . . .  "
+read enter
+}
+
+nmapTOOL ()
+{
+    clear
+    echo " "
+cd /root/Desktop/DSA-TOOL/Toollar/Nmap-Tools
+./nmap
+echo " "
+echo " Enter'a Basarak Devam Edebilirsiniz . . .  "
+read enter
+}
+
+bypassTOOL ()
+{
+    clear
+    echo " "
+cd /root/Desktop/DSA-TOOL/Toollar/ByPass
+./ByPass
+echo " "
+echo " Enter'a Basarak Devam Edebilirsiniz . . .  "
+read enter
+}
+
+uniscanTOOL ()
+{
+    clear
+    echo " "
+cd /root/Desktop/DSA-TOOL/Toollar/Uniscan-Tool
+./uniscan
+echo " "
+echo " Enter'a Basarak Devam Edebilirsiniz . . .  "
+read enter
+}
+
+sn1perTOOL ()
+{
+    clear
+    echo " "
+cd /root/Desktop/DSA-TOOL/Toollar
+./sn1per-tools
+echo " "
+echo " Enter'a Basarak Devam Edebilirsiniz . . .  "
+read enter
+}
+
+exit_script1()
+{
+  exit 1
+}
+
+Take_input1()
+{
+clear
+while :
+do
+clear                   
+echo -e "${WHITE}"
+echo -e "${WHITE}██████╗ ███████╗ █████╗    ████████╗ ██████╗  ██████╗ ██╗     "
+echo -e "${WHITE}██╔══██╗██╔════╝██╔══██╗   ╚══██╔══╝██╔═══██╗██╔═══██╗██║     "
+echo -e "${WHITE}██║  ██║███████╗███████║█████╗██║   ██║   ██║██║   ██║██║     "
+echo -e "${WHITE}██║  ██║╚════██║██╔══██║╚════╝██║   ██║   ██║██║   ██║██║     "
+echo -e "${WHITE}██████╔╝███████║██║  ██║      ██║   ╚██████╔╝╚██████╔╝███████╗"
+echo -e "${WHITE}╚═════╝ ╚══════╝╚═╝  ╚═╝      ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝"
+echo -e "${WHITE}  "${WHITE}
+    echo -e "${WHITE}CODED BY YANLIZ KURT ${GREEN}DarkSecArmy.COM | PcDunyasi.TV${RED}  [NO EDIT] "
+    echo -e "${WHITE} "${GREEN}CTRL + Z YAPARAK SCRIPTDEN CIKIS YAPABILIRSINIZ
+    echo -e "${RED}==================== PARAMETRELER ====================+ "	
+    echo -e "${LIGHTBLUE}[1]${WHITE}HPING3 TOOLS'A GIRIS YAPINIZ${LIGHTBLUE}                       | "
+    echo -e "${LIGHTBLUE}[2]${WHITE}WPSCAN TOOLS'A GIRIS YAPINIZ${LIGHTBLUE}                       | "
+    echo -e "${LIGHTBLUE}[3]${WHITE}NIKTO TOOLS'A GIRIS YAPINIZ${LIGHTBLUE}                        | "
+    echo -e "${LIGHTBLUE}[4]${WHITE}NMAP TOOLS'A GIRIS YAPINIZ${LIGHTBLUE}                         | "     
+    echo -e "${LIGHTBLUE}[5]${WHITE}BYPASS TOOLS'A GIRIS YAPINIZ${LIGHTBLUE}                       | "
+    echo -e "${LIGHTBLUE}[6]${WHITE}UNISCAN TOOLS'A GIRIS YAPINIZ${LIGHTBLUE}                      | "
+    echo -e "${LIGHTBLUE}[7]${WHITE}SN1PER TOOLS'A GIRIS YAPINIZ${LIGHTBLUE}                       |  "
+    echo -e "${RED}======================================================+ "
+    echo -n "Menuden Parametreleri Secebilirsiniz [1 - 7] "
+    read yourch
+    case $yourch in
+      1) HpingTools ;;
+      2) wpscanTOOL ;;
+      3) niktoTOOL ;;
+      4) nmapTOOL ;;
+      5) bypassTOOL ;;
+      6) uniscanTOOL ;;
+      7) sn1perTOOL ;;
+      ex) echo "As you Command" ;  exit 1  ;;
+      *) echo "HATALI RAKAM GIRDINIZ" ;
+         echo "Enter Basarak Menuye Dönebilirsiniz . . ." ; read ;;
+ esac
+done # end_while
+}
+#
+# Set trap to for CTRL+C interrupt i.e. Install our error handler
+# When occurs it first it calls del_file() and then exit
+#
+trap exit_script 2
+#
+# Call our user define function : Take_input1
+#
+Take_input1
