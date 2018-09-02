@@ -26,6 +26,8 @@ HpingTools()
 {
     clear
 cd /root/Desktop/DSA-TOOL/Toollar/Hping3-Tool
+chmod 777 *
+chmod +x *
 ./hping3
 echo " "
 echo " Enter'a Basarak Devam Edebilirsiniz . . .  "
@@ -37,6 +39,8 @@ wpscanTOOL ()
     clear
     echo " "
 cd /root/Desktop/DSA-TOOL/Toollar/WpScan-Tool
+chmod 777 *
+chmod +x *
 ./wpscan
 echo " "
 echo " Enter'a Basarak Devam Edebilirsiniz . . .  "
@@ -48,6 +52,8 @@ niktoTOOL ()
     clear
     echo "  "
 cd /root/Desktop/DSA-TOOL/Toollar/Nikto-Tools
+chmod 777 *
+chmod +x *
 ./nikto
 echo " "
 echo " Enter'a Basarak Devam Edebilirsiniz . . .  "
@@ -59,6 +65,8 @@ nmapTOOL ()
     clear
     echo " "
 cd /root/Desktop/DSA-TOOL/Toollar/Nmap-Tools
+chmod 777 *
+chmod +x *
 ./nmap
 echo " "
 echo " Enter'a Basarak Devam Edebilirsiniz . . .  "
@@ -70,6 +78,8 @@ bypassTOOL ()
     clear
     echo " "
 cd /root/Desktop/DSA-TOOL/Toollar/ByPass
+chmod 777 *
+chmod +x *
 ./ByPass
 echo " "
 echo " Enter'a Basarak Devam Edebilirsiniz . . .  "
@@ -81,6 +91,8 @@ uniscanTOOL ()
     clear
     echo " "
 cd /root/Desktop/DSA-TOOL/Toollar/Uniscan-Tool
+chmod 777 *
+chmod +x *
 ./uniscan
 echo " "
 echo " Enter'a Basarak Devam Edebilirsiniz . . .  "
@@ -92,6 +104,8 @@ sn1perTOOL ()
     clear
     echo " "
 cd /root/Desktop/DSA-TOOL/Toollar
+chmod 777 sn1per-tools
+chmod +x sn1per-tools
 ./sn1per-tools
 echo " "
 echo " Enter'a Basarak Devam Edebilirsiniz . . .  "
