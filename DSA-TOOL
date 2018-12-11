@@ -131,7 +131,7 @@ echo -e "${WHITE}██║  ██║╚════██║██╔══█�
 echo -e "${WHITE}██████╔╝███████║██║  ██║      ██║   ╚██████╔╝╚██████╔╝███████╗"
 echo -e "${WHITE}╚═════╝ ╚══════╝╚═╝  ╚═╝      ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝"
 echo -e "${WHITE}  "${WHITE}
-    echo -e "${WHITE}CODED BY YANLIZ KURT ${GREEN}DarkSecArmy.COM | PcDunyasi.TV${RED}  [NO EDIT] "
+    echo -e "${WHITE}CODED BY COLAK ${GREEN}DarkSecArmy.COM | PcDunyasi.TV${RED}  [NO EDIT] "
     echo -e "${WHITE} "${GREEN}CTRL + Z YAPARAK SCRIPTDEN CIKIS YAPABILIRSINIZ
     echo -e "${RED}==================== PARAMETRELER ====================+ "	
     echo -e "${LIGHTBLUE}[1]${WHITE}HPING3 TOOLS'A GIRIS YAPINIZ${LIGHTBLUE}                       | "
